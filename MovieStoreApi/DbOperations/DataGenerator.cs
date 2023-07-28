@@ -93,7 +93,6 @@ namespace MovieStoreApi.DbOperations
                 context.Movies.AddRange(
                    new Movie
                    {
-                       // ID = 1,
                        GenreID = 1,
                        Title = "After Life",
                        Year = "2015",
@@ -105,7 +104,6 @@ namespace MovieStoreApi.DbOperations
 
                    new Movie
                    {
-                       // ID = 2,
                        GenreID = 3,
                        Title = "Ugly Betty",
                        Year = "2020",

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieStoreApi", "MovieStoreApi\MovieStoreApi.csproj", "{8EA016ED-8BB3-4E85-904F-563C0CD88EDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieStoreApi.Test", "Test\MovieStoreApi.Test.csproj", "{445049F7-78D4-43D9-8F83-93EA84187C5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{CCD5B3C6-0A82-4550-BE33-72A307E96976}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{8EA016ED-8BB3-4E85-904F-563C0CD88EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EA016ED-8BB3-4E85-904F-563C0CD88EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EA016ED-8BB3-4E85-904F-563C0CD88EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{445049F7-78D4-43D9-8F83-93EA84187C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{445049F7-78D4-43D9-8F83-93EA84187C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{445049F7-78D4-43D9-8F83-93EA84187C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{445049F7-78D4-43D9-8F83-93EA84187C5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{445049F7-78D4-43D9-8F83-93EA84187C5C} = {CCD5B3C6-0A82-4550-BE33-72A307E96976}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E823CCB7-A977-457F-AB32-1BD7702E81F1}
