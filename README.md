@@ -9,9 +9,15 @@ MovieStoreApi, kullanıcılara film mağazası uygulamasında oturum açma yeten
 
 Uygulama Gereksinimleri
 1.Film Ekleme/Silme/Güncelleme/Listeleme
+
 2.Müşteri Ekleme/Silme
+
 3.Oyuncu Ekleme/Silme/Güncelleme/Listeleme
+
 4.Yönetmen Ekleme/Silme/Güncelleme/Listeleme/
+
 5.Film Satın Alma
+
 6.Müşteri bazlı satın alma verisinin listelenmesi. Satın alınan filmler daha sonra sistemden silinebilir. Bu sipariş datasını etkilememeli. Bu durumu sağlamak için film verileri hard olarajk silinmemelidir. Bir Aktif-Pasif özelliği ile yönetilebilir.
+
 7.Film türleri uygulama çalıştırıldığından varsayılan olarak yaratılabilir. Servisler ile yönetilmesine gerek yoktur.
