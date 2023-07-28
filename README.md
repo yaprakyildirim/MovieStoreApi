@@ -8,6 +8,7 @@ MovieStoreApi, kullanıcılara film mağazası uygulamasında oturum açma yeten
 
 
 Uygulama Gereksinimleri
+
 1.Film Ekleme/Silme/Güncelleme/Listeleme
 
 2.Müşteri Ekleme/Silme
