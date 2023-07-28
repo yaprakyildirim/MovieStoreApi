@@ -5,6 +5,9 @@ using MovieStoreApi.Applications.CustomerOperations.CreateCustomer;
 using MovieStoreApi.Applications.DirectorOperations.Commands.CreateDirector;
 using MovieStoreApi.Applications.DirectorOperations.Commands.UpdateDirector;
 using MovieStoreApi.Applications.DirectorOperations.Queries;
+using MovieStoreApi.Applications.GenreOperations.Commands.CreateGenre;
+using MovieStoreApi.Applications.GenreOperations.Commands.UpdateGenre;
+using MovieStoreApi.Applications.GenreOperations.Querys;
 using MovieStoreApi.Entities;
 
 namespace MovieStoreApi.Common
@@ -25,6 +28,12 @@ namespace MovieStoreApi.Common
             CreateMap<Director, UpdateDirectorModel>().ReverseMap();
             CreateMap<Director, GetListDirectorModel>().ReverseMap();
             CreateMap<Director, GetByIdDirectorModel>().ReverseMap();
+
+            //Genre
+            CreateMap<Genre, GetListModel>().ReverseMap();
+            CreateMap<Genre, GenreDetailModel>().ReverseMap();
+            CreateMap<CreateGenreModel, Genre>().ReverseMap();
+            CreateMap<UpdateGenreModel, Genre>().ReverseMap();
         }
     }
 }

@@ -71,6 +71,23 @@ namespace MovieStoreApi.DbOperations
                   new Director { FirstName = "Silvio", LastName = "Horta", FilmsDirected = "Ugly Betty", IsActive = true }
                   );
                 context.SaveChanges();
+
+                //Genre Info
+                context.Genres.AddRange(
+                   new Genre
+                   {
+                       Name = "Komedi"
+                   },
+                   new Genre
+                   {
+                       Name = "Drama"
+                   },
+                   new Genre
+                   {
+                       Name = "Gerilim"
+                   }
+               );
+                context.SaveChanges();
             }
         }
     }
