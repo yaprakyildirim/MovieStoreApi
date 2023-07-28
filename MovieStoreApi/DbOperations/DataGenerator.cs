@@ -88,6 +88,33 @@ namespace MovieStoreApi.DbOperations
                    }
                );
                 context.SaveChanges();
+
+                //Movies Info
+                context.Movies.AddRange(
+                   new Movie
+                   {
+                       // ID = 1,
+                       GenreID = 1,
+                       Title = "After Life",
+                       Year = "2015",
+                       Director = "Chad Stahelski",
+                       Actors = "Dany Won, Henry Doe",
+                       Price = 50,
+                       IsActive = true
+                   },
+
+                   new Movie
+                   {
+                       // ID = 2,
+                       GenreID = 3,
+                       Title = "Ugly Betty",
+                       Year = "2020",
+                       Director = "Ashley Jensen",
+                       Actors = " Tom Jerry, Jhon Thenissen",
+                       Price = 45,
+                       IsActive = true
+                   });
+                context.SaveChanges();
             }
         }
     }

@@ -14,7 +14,6 @@ namespace MovieStoreApi.Entities
         public string Actors { get; set; }
         public int Price { get; set; }
         public bool IsActive { get; set; } = true;
-
         public Genre Genre { get; set; }
     }
 }
