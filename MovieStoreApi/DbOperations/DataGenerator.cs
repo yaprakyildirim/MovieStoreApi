@@ -23,8 +23,47 @@ namespace MovieStoreApi.DbOperations
                   new Actor { FirstName = "Silvio", LastName = "Horta", PlayedMovies = "Ugly Betty", IsAvtive = true }
                   );
                 context.SaveChanges();
+
+
+                context.Customers.AddRange(
+                 new Customer
+                 {
+                     FirstName = "Yaprak",
+                     LastName = "Yildirim",
+                     Email = "yaprakyildirim@gmail.com",
+                     Password = "111111",
+                     IsActive = true
+
+                 },
+                 new Customer
+                 {
+                     FirstName = "Cem",
+                     LastName = "Günveren",
+                     Email = "cem@gmail.com",
+                     Password = "123456",
+                     IsActive = true
+
+                 },
+                 new Customer
+                 {
+                     FirstName = "Altun",
+                     LastName = "Yıldırım",
+                     Email = "altun@gmail.com",
+                     Password = "a12345",
+                     IsActive = true
+
+                 }, 
+                 new Customer
+                 {
+                     FirstName = "Yusuf",
+                     LastName = "Yıldıran",
+                     Email = "yusuf@gmail.com",
+                     Password = "12345y",
+                     IsActive = true
+
+                 });   
+                context.SaveChanges();
             }
         }
-
     }
 }
