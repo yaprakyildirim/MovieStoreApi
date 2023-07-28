@@ -11,7 +11,10 @@ using MovieStoreApi.Applications.GenreOperations.Querys;
 using MovieStoreApi.Applications.MovieOperations.Commands.CreateMovie;
 using MovieStoreApi.Applications.MovieOperations.Commands.UpdateMovie;
 using MovieStoreApi.Applications.MovieOperations.Querys;
+using MovieStoreApi.Applications.OrderOperations.Model;
 using MovieStoreApi.Entities;
+using static MovieStoreApi.Applications.OrderOperations.Commands.CreateOrder.CreateOrderCommand;
+using static MovieStoreApi.Applications.OrderOperations.Commands.UpdateOrder.UpdateOrderCommand;
 
 namespace MovieStoreApi.Common
 {
@@ -38,11 +41,20 @@ namespace MovieStoreApi.Common
             CreateMap<CreateGenreModel, Genre>().ReverseMap();
             CreateMap<UpdateGenreModel, Genre>().ReverseMap();
 
-            //Movei
+            //Movie
             CreateMap<Movie, MovieViewModel>().ForMember(dest => dest.Genre, opt => opt.MapFrom(src => src.Genre.Name));
             CreateMap<Movie, MovieDetailModel>().ForMember(dest => dest.Genre, opt => opt.MapFrom(src => src.Genre.Name));
             CreateMap<Movie, CreateMovieModel>().ReverseMap();
             CreateMap<UpdateMoveiModel, Movie>().ReverseMap();
+
+            //Order
+            CreateMap<CreateOrderModel, Order>().ReverseMap();
+            CreateMap<UpdateOrderModel, Order>().ReverseMap();
+            CreateMap<Customer, OrderViewModel>()
+                .ForMember(dest => dest.NameSurname, opt => opt.MapFrom(x => x.FirstName + " " + x.LastName))
+                .ForMember(dest => dest.Movies, opt => opt.MapFrom(x => x.Orders.Select(y => y.Movie.Title)))
+                .ForMember(dest => dest.Price, opt => opt.MapFrom(x => x.Orders.Select(y => y.Movie.Price)))
+                .ForMember(dest => dest.PurchasedDate, opt => opt.MapFrom(x => x.Orders.Select(y => y.purchasedTime)));
         }
     }
 }
