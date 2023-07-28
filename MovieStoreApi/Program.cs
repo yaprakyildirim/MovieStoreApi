@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MovieStoreApi.DbOperations;
+using MovieStoreApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCustomExceptionMiddle();
 
 app.MapControllers();
 
