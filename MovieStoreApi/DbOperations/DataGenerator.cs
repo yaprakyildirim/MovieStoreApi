@@ -13,7 +13,7 @@ namespace MovieStoreApi.DbOperations
                 {
                     return;
                 }
-
+                //Actor Info
                 context.Actors.AddRange(
                   new Actor { FirstName = "Ricky", LastName = "Gervais", PlayedMovies = "After Life", IsAvtive = true },
                   new Actor { FirstName = "Tom", LastName = "Basden", PlayedMovies = "Quacks", IsAvtive = true },
@@ -24,7 +24,7 @@ namespace MovieStoreApi.DbOperations
                   );
                 context.SaveChanges();
 
-
+                //Customer Info
                 context.Customers.AddRange(
                  new Customer
                  {
@@ -62,6 +62,14 @@ namespace MovieStoreApi.DbOperations
                      IsActive = true
 
                  });   
+                context.SaveChanges();
+
+                //Director Info
+                context.Directors.AddRange(
+                  new Director { FirstName = "Ricky", LastName = "Gervais", FilmsDirected = "After Life", IsActive = true },
+                  new Director { FirstName = "Ashley", LastName = "Jensen", FilmsDirected = "Ugly Betty", IsActive = true },
+                  new Director { FirstName = "Silvio", LastName = "Horta", FilmsDirected = "Ugly Betty", IsActive = true }
+                  );
                 context.SaveChanges();
             }
         }
