@@ -2,7 +2,7 @@
 using MovieStoreApi.DbOperations;
 using MovieStoreApi.Entities;
 
-namespace MovieStoreApi.Applications.CustomerOperations.CreateCustomer
+namespace MovieStoreApi.Applications.CustomerOperations.Commands.CreateCustomer
 {
     public class CreateCustomerCommand
     {

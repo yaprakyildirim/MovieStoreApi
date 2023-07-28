@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using MovieStoreApi.Applications.CustomerOperations.CreateCustomer;
+using MovieStoreApi.Applications.CustomerOperations.Commands.CreateCustomer;
 
 namespace MovieStoreApi.Applications.CustomerOperations.Validator
 {

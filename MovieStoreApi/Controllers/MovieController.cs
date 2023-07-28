@@ -11,6 +11,7 @@ using MovieStoreApi.DbOperations;
 
 namespace MovieStoreApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class MovieController : Controller

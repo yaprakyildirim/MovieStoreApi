@@ -1,6 +1,6 @@
 ﻿using MovieStoreApi.DbOperations;
 
-namespace MovieStoreApi.Applications.CustomerOperations.DeleteCustomer
+namespace MovieStoreApi.Applications.CustomerOperations.Commands.DeleteCustomer
 {
     public class DeleteCustomerCommand
     {

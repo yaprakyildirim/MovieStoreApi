@@ -11,7 +11,7 @@ using static MovieStoreApi.Applications.OrderOperations.Commands.UpdateOrder.Upd
 
 namespace MovieStoreApi.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : Controller

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MovieStoreApi.Applications.ActorOperations.Commands.CreateActor;
 using MovieStoreApi.Applications.ActorOperations.Querys;
-using MovieStoreApi.Applications.CustomerOperations.CreateCustomer;
+using MovieStoreApi.Applications.CustomerOperations.Commands.CreateCustomer;
 using MovieStoreApi.Applications.DirectorOperations.Commands.CreateDirector;
 using MovieStoreApi.Applications.DirectorOperations.Commands.UpdateDirector;
 using MovieStoreApi.Applications.DirectorOperations.Queries;
